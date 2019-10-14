@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>  <!-- Régler le viewport pour les mobiles-->
 		<title>Rdio - Luke Chesser</title>
 
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- bootstrap-->
 	</head>
+	
+	
+	
+	
 	<body>
 
 <!-- .container for a responsive fixed width container.      .container-fluid for a full width container, spanning the entire width of your viewport.-->
     <div class="container">   <!-- on met tout dans un container-->
+		
+		
+	<!-----------------------------HEADER ---------------------------------->	
+		
 		<header>
 			<div class="wrapper row">  <!-- on rajoute row apres wrapper pour diviser le wrapper en colonne-->
 				
@@ -38,7 +47,12 @@
 				</div>
 			</div>
 		</header>
-		<aside>
+
+
+	<!-----------------------------ASIDE ---------------------------------->	
+
+	<div class="row">
+		<aside class="col-2 d-none d-lg-block">  
 			<h3>Browse</h3>
 			<nav class="browse">
 				<ul class="main">
@@ -57,9 +71,15 @@
 			</nav>
 		</aside>
 
-		<main>
+		<!-----------------------------MAIN ---------------------------------->
+
+		<main class="col-10">
+			
+			
+		<!-----------------------------HEADER ---------------------------------->
+
 			<header>
-				<div class="name-photo">
+				<div class="name-photo row">
 					<aside>
 						<img src="img/artist.png" />
 					</aside>
@@ -68,14 +88,15 @@
 						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
 					</div>
 				</div>
-				<div class="stats-links">
-					<section class="stats">
+				<div class="stats-links row">  <!-- pour aligner les liens collection et history-->
+					<section class="stats col-10">
 						<span>2 Playlists</span>
 						<span>4 Reviews</span>
 						<span>6 Followers</span>
 						<span>13 Following</span>
 					</section>
-					<div class="links">
+					
+					<div class="links col-2">
 						<div>
 							<a href="#">Collection</a>
 							<a href="#">History</a>
@@ -83,11 +104,17 @@
 					</div>
 				</div>
 			</header>
-			<h2>Top Album</h2>
+
+
+			<!-----------------------------ALBUM---------------------------------->
+
+			<div class="row">
+			<h2 class="col-10">Top Album</h2>
 			<div>
-				<a class="station" href="#">Start Station</a>
+				<a class="station col-2" href="#">Start Station</a>
 			</div>
-			<section id="albums">
+			</div>
+			<section id="albums" class="row">
 				<article>
 					<figure>
 						<img src="img/album/album_01.png" />
@@ -169,10 +196,12 @@
 					<div class="count">13 songs</div>
 				</article>
 			</section>
+		
+	
 		</main>
 
 
-
+	</div> <!-- div qui ferme le class=row-->
 	</div> <!-- div qui ferme le premier div class=container-->
 
 	</body>
