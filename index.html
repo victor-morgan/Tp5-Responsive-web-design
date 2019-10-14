@@ -29,7 +29,7 @@
 				
 				<div class="col-4 d-none d-md-block">  <!-- position taille de la barre de recherche     ////   d-md-block : Hidden only on sm-->
 					<form method="POST" action="index.html">
-						<input type="search" required class="search">
+						<input type="search" id="hiddenBar" required class="search">
 						<input type="submit" name="submit" value="Rechercher" class="submit">
 					</form>
 				</div>
@@ -85,7 +85,7 @@
 					</aside>
 					<div class="name">
 						<h1>Luke Chesser</h1>
-						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
+						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" id="hiddenImg" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" id="hiddenImg" src="img/icon/twitter.png" /></a></p> <!-- l'id des images sert à les faire disparaitre avec le media queries-->
 					</div>
 				</div>
 				<div class="stats-links row">  <!-- pour aligner les liens collection et history-->
@@ -115,7 +115,7 @@
 			</div>
 			</div>
 			<section id="albums" class="row">
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_01.png" />
 						<figcaption>Native (Deluxe)</figcaption>
@@ -123,7 +123,7 @@
 					<div class="artist">OneRepublic</div>
 					<div class="count">17 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_02.png" />
 						<figcaption>Wax Wings</figcaption>
@@ -131,7 +131,7 @@
 					<div class="artist">Joshua Radin</div>
 					<div class="count">11 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_03.png" />
 						<figcaption>Modern Vampires of th...</figcaption>
@@ -139,7 +139,7 @@
 					<div class="artist">Vampire Weekend</div>
 					<div class="count">12 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_04.png" />
 						<figcaption>Night Visions</figcaption>
@@ -147,7 +147,7 @@
 					<div class="artist">Imagine Dragons</div>
 					<div class="count">11 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_05.png" />
 						<figcaption>Trouble Will Find Me</figcaption>
@@ -155,7 +155,7 @@
 					<div class="artist">The National</div>
 					<div class="count">13 songs <span class="explicit">EXPLICIT</span></div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_06.png" />
 						<figcaption>Native (Deluxe)</figcaption>
@@ -163,7 +163,7 @@
 					<div class="artist">OneRepublic</div>
 					<div class="count">17 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_07.png" />
 						<figcaption>Wax Wings</figcaption>
@@ -171,7 +171,7 @@
 					<div class="artist">Joshua Radin</div>
 					<div class="count">11 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_08.png" />
 						<figcaption>Modern Vampires of th...</figcaption>
@@ -179,7 +179,7 @@
 					<div class="artist">Vampire Weekend</div>
 					<div class="count">12 songs</div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_09.png" />
 						<figcaption>Night Visions</figcaption>
@@ -187,7 +187,7 @@
 					<div class="artist">Imagine Dragons</div>
 					<div class="count">11 songs <span class="explicit">EXPLICIT</span></div>
 				</article>
-				<article>
+				<article class="col-5 col-md-3 col-lg-2  col-xl-2">
 					<figure>
 						<img src="img/album/album_10.png" />
 						<figcaption>Trouble Will Find Me</figcaption>
