@@ -232,3 +232,10 @@ nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
       display: none;
     }
   }
+
+  @media screen and (max-width: 1000px) {      
+    body {
+        background-color: red;
+    }
+    
+    }
